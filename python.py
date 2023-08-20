@@ -1,8 +1,10 @@
-x = int(input("Enter a number: "))
-factorial = 1
-if x == 0 or x == 1:
-    factorial = 1
+list_1 = [1,10,7,6]
+list_2 = [4,7,2]
+list_1.extend(list_2)
+list_1.sort()
+length = len(list_1)
+if (length%2 == 0):
+    median = (list_1[length//2]+list_1[(length//2)-1])/2
 else:
-    for i in range(1, x + 1):
-        factorial = factorial * i
-print(factorial)
+    median = list_1[length//2]
+print(median)
